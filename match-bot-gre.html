@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Botafogo x Grêmio</title>
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>⚽</text></svg>">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-logo">
+    <a href="home.html" style="text-decoration: none; color: white;">
+        <span class="highlight">Resenha</span>
+    </a>
+</div>
+        <div class="nav-search"><i class="fa-solid fa-magnifying-glass"></i><input type="text" placeholder="Busque por um jogo..."></div>
+    </nav>
+    <main class="match-content">
+        <div class="main-card">
+            <p class="match-status">CAMPEONATO BRASILEIRO • FINALIZADO</p>
+            <div class="scoreboard">
+                <div class="team"><div class="team-logo bot-bg">BOT</div><span>Botafogo</span></div>
+                <div class="score">3 - 2</div>
+                <div class="team"><div class="team-logo gre-bg">GRE</div><span>Grêmio</span></div>
+            </div>
+
+            <div class="tabs-menu">
+                <button class="tab-btn active" data-target="tira-teima">Tira-Teima</button>
+                <button class="tab-btn" data-target="visao-geral">Visão Geral</button>
+                <button class="tab-btn" data-target="escalacoes">Escalações</button>
+                <button class="tab-btn" data-target="classificacao">Classificação</button>
+            </div>
+
+            <div id="content-tira-teima" class="tab-content">
+                <div class="stat-card">
+                    <h3>Últimos 10 Confrontos</h3>
+                    <div class="confronto-stats">
+                        <div><span class="big-number">2</span><span class="label">Vitórias BOT</span></div>
+                        <div><span class="big-number">2</span><span class="label">Empates</span></div>
+                        <div><span class="big-number">6</span><span class="label">Vitórias GRE</span></div>
+                    </div>
+                    <div class="progress-bar-container"><div class="progress-fill" style="width: 25%;"></div></div>
+                </div>
+                <div class="stat-card">
+                    <h3>Duelo Artilheiro</h3>
+                    <div class="duel-container">
+                        <div class="player">
+                            <img src="https://via.placeholder.com/70" alt="Artur" class="player-img">
+                            <span class="player-name">Artur</span>
+                            <span class="highlight-text">5 Gols</span>
+                        </div>
+                        <span class="vs">VS</span>
+                        <div class="player">
+                            <img src="https://via.placeholder.com/70" alt="Carlos" class="player-img">
+                            <span class="player-name">Carlos Vinícius</span>
+                            <span class="highlight-text">9 Gols</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="stat-card">
+                    <h3>Últimos 5 Jogos</h3>
+                    <div class="last-matches-row">
+                        <span>Botafogo</span><div class="badges"><span class="badge win">V</span><span class="badge win">V</span><span class="badge draw">E</span><span class="badge win">V</span><span class="badge win">V</span></div>
+                    </div>
+                    <div class="last-matches-row">
+                        <span>Grêmio</span><div class="badges"><span class="badge loss">D</span><span class="badge win">V</span><span class="badge loss">D</span><span class="badge draw">E</span><span class="badge loss">D</span></div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="content-visao-geral" class="tab-content" style="display: none;">
+                <h3 class="section-title">Eventos Principais</h3>
+                <div class="events-list">
+                    <div class="event-row home-event"><span class="time">15'</span><i class="fa-solid fa-futbol icon-event"></i><span>Gol de Cuiabano (BOT)</span></div>
+                    <div class="event-row home-event"><span class="time">19'</span><i class="fa-solid fa-futbol icon-event"></i><span>Gol de Artur (BOT)</span></div>
+                    <div class="event-row away-event"><span>Gol de A. Henrique (GRE)</span><i class="fa-solid fa-futbol icon-event"></i><span class="time">49'</span></div>
+                    <div class="event-row home-event"><span class="time">83'</span><i class="fa-solid fa-futbol icon-event"></i><span>Gol de Marçal (BOT)</span></div>
+                    <div class="event-row away-event"><span>Gol de C. Vinícius (GRE)</span><i class="fa-solid fa-futbol icon-event"></i><span class="time">90'</span></div>
+                </div>
+            </div>
+
+            <div id="content-escalacoes" class="tab-content" style="display: none;">
+                <div class="lineup-header">
+                    <div class="l-team-left"><div class="team-logo-sm bot-bg">BOT</div><span>Botafogo</span></div>
+                    <div class="l-team-right"><span>Grêmio</span><div class="team-logo-sm gre-bg">GRE</div></div>
+                </div>
+                <div class="pitch-container">
+                    <div class="pitch-lines"><div class="pitch-center-line"></div><div class="pitch-center-circle"></div><div class="pitch-box top-box"></div><div class="pitch-box bottom-box"></div></div>
+                    
+                    <div class="player-node p-bot" style="top: 2%; left: 50%;">1 <span class="p-name">Léo Linck</span></div>
+                    <div class="player-node p-bot" style="top: 12%; left: 15%;">2 <span class="p-name">Vitinho</span></div>
+                    <div class="player-node p-bot" style="top: 12%; left: 38%;">3 <span class="p-name">Barboza</span></div>
+                    <div class="player-node p-bot" style="top: 12%; left: 62%;">4 <span class="p-name">D. Ricardo</span></div>
+                    <div class="player-node p-bot" style="top: 12%; left: 85%;">66 <span class="p-name">Cuiabano</span></div>
+                    
+                    <div class="player-node p-bot" style="top: 24%; left: 35%;">5 <span class="p-name">Danilo</span></div>
+                    <div class="player-node p-bot" style="top: 24%; left: 65%;">17 <span class="p-name">M. Freitas</span></div>
+                    
+                    <div class="player-node p-bot" style="top: 36%; left: 20%;">10 <span class="p-name">Savarino</span></div>
+                    <div class="player-node p-bot" style="top: 36%; left: 50%;">11 <span class="p-name">Correa</span></div>
+                    <div class="player-node p-bot" style="top: 36%; left: 80%;">7 <span class="p-name">Montoro</span></div>
+                    
+                    <div class="player-node p-bot" style="top: 43%; left: 50%;">9 <span class="p-name">Kadir</span></div>
+
+                    <div class="player-node p-gre" style="bottom: 43%; left: 50%;">9 <span class="p-name">C. Vinícius</span></div>
+
+                    <div class="player-node p-gre" style="bottom: 36%; left: 20%;">7 <span class="p-name">Alysson</span></div>
+                    <div class="player-node p-gre" style="bottom: 36%; left: 50%;">15 <span class="p-name">Edenilson</span></div>
+                    <div class="player-node p-gre" style="bottom: 36%; left: 80%;">21 <span class="p-name">Pavon</span></div>
+
+                    <div class="player-node p-gre" style="bottom: 24%; left: 35%;">8 <span class="p-name">Cuéllar</span></div>
+                    <div class="player-node p-gre" style="bottom: 24%; left: 65%;">17 <span class="p-name">Dodi</span></div>
+
+                    <div class="player-node p-gre" style="bottom: 12%; left: 15%;">2 <span class="p-name">M. Rocha</span></div>
+                    <div class="player-node p-gre" style="bottom: 12%; left: 38%;">3 <span class="p-name">Erick N.</span></div>
+                    <div class="player-node p-gre" style="bottom: 12%; left: 62%;">4 <span class="p-name">Kannemann</span></div>
+                    <div class="player-node p-gre" style="bottom: 12%; left: 85%;">6 <span class="p-name">Marlon</span></div>
+                    <div class="player-node p-gre" style="bottom: 2%; left: 50%;">1 <span class="p-name">Volpi</span></div>
+                </div>
+            </div>
+             <div id="content-classificacao" class="tab-content" style="display: none;">
+                <h3 class="section-title">Campeonato Brasileiro 2024</h3>
+                <table class="standings-table">
+                     <thead><tr><th>TIME</th><th>PTS</th><th>PJ</th><th>V</th></tr></thead>
+                    <tbody>
+                        <tr class="zone-libertadores"><td>Flamengo</td><td>74</td><td>35</td><td>22</td></tr>
+                        <tr class="zone-libertadores"><td>Palmeiras</td><td>70</td><td>35</td><td>21</td></tr>
+                        <tr class="zone-libertadores"><td>Cruzeiro</td><td>65</td><td>34</td><td>18</td></tr>
+                        <tr class="zone-libertadores"><td>Mirassol</td><td>60</td><td>34</td><td>16</td></tr>
+                        <tr><td class="highlight-team">Botafogo</td><td>58</td><td>35</td><td>16</td></tr>
+                        <tr><td>Fluminense</td><td>55</td><td>35</td><td>16</td></tr>
+                        <tr><td>Bahia</td><td>53</td><td>34</td><td>15</td></tr>
+                        <tr><td>Bragantino</td><td>45</td><td>35</td><td>13</td></tr>
+                        <tr><td>São Paulo</td><td>45</td><td>34</td><td>12</td></tr>
+                        <tr><td>Corinthians</td><td>45</td><td>34</td><td>12</td></tr>
+                        <tr><td>Atlético-MG</td><td>44</td><td>34</td><td>11</td></tr>
+                        <tr><td class="highlight-team">Grêmio</td><td>43</td><td>35</td><td>11</td></tr>
+                        <tr><td>Vasco</td><td>42</td><td>34</td><td>12</td></tr>
+                        <tr><td>Ceará</td><td>42</td><td>34</td><td>11</td></tr>
+                        <tr><td>Internacional</td><td>40</td><td>34</td><td>10</td></tr>
+                        <tr><td>Santos</td><td>37</td><td>34</td><td>9</td></tr>
+                        <tr class="zone-z4"><td>Vitória</td><td>36</td><td>34</td><td>8</td></tr>
+                        <tr class="zone-z4"><td>Fortaleza</td><td>34</td><td>34</td><td>8</td></tr>
+                        <tr class="zone-z4"><td>Juventude</td><td>33</td><td>34</td><td>9</td></tr>
+                        <tr class="zone-z4"><td>Sport</td><td>17</td><td>34</td><td>2</td></tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
