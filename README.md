@@ -21,15 +21,15 @@ Projeto desenvolvido para a disciplina de Interface Humano Computador. A aplicaÃ
 ##  Prints do Projeto
 
 ### Tela de Login
-![Tela de Login](tela-login.png)
+![Tela de Login](img/tela-login.png)
 
 ### Tela Principal (Home)
-![Tela Principal](tela-principal.png)
+![Tela Principal](img/tela-principal.png)
 
 ### Detalhes da Partida
-![Tela de Detalhes](tela-detalhes.png)
+![Tela de Detalhes](img/tela-detalhes.png)
 
-## ðŸ‘¥ Autor
+##  Autor
 - **Guilherme Henrique Soares Albuquerque**
 
 ---
